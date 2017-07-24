@@ -29,6 +29,34 @@ HTTP responses provide useful partitioning via status codes. But since
 status codes appear inside a server *response* they cannot possibly
 cover e.g. failure to get a response at all.
 
+# The Categories
+
+The category column contains the name of an anomaly category within
+the `cognitect.anomalies` namespace.
+
+The retry column is "yes" if a replay of the same activity might
+reasonably lead to a different outcome. When a program encounters a
+retryable anomaly, it may be reasonable to back off and try again.
+
+The "fix" column provides an example of how a programmer or operator
+might fix problems in this category.
+
+The "song" column contains a Hall and Oates song. The idea that Hall
+and Oates are software gurus is controversial in some circles, so you
+can treat this as flavortext.
+
+| category | retry | fix | song |
+| ---- | ---- | --- | --- |
+| :unavailable | yes | make sure callee healthy | Out of Touch |
+| :interrupted | yes | stop interrupting | It Doesn't Matter Anymore |
+| :incorrect | no | fix caller bug | You'll Never Learn |
+| :forbidden | no | fix caller creds | I Can't Go For That |
+| :unsupported | no | fix caller verb | Your Imagination |
+| :not-found | no | fix caller noun | She's Gone |
+| :conflict | no | coordinate with callee | Give It Up |
+| :fault | no | fix callee bug | Falling |
+| :busy | yes | backoff and retry | Wait For Me |
+
 # Using cognitect.anomalies
 
 [Leiningen](https://github.com/technomancy/leiningen) dependency information:
