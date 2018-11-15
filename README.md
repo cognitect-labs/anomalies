@@ -59,6 +59,10 @@ can treat this as flavortext.
 
 # Using cognitect.anomalies
 
+[Clojure CLI](https://clojure.org/guides/deps_and_cli) dependency information:
+
+    com.cognitect/anomalies {:mvn/version "0.1.12"}
+
 [Leiningen](https://github.com/technomancy/leiningen) dependency information:
 
     [com.cognitect/anomalies "0.1.12"]
