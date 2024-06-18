@@ -45,17 +45,17 @@ The "song" column contains a Hall and Oates song. The idea that Hall
 and Oates are software gurus is controversial in some circles, so you
 can treat this as flavortext.
 
-| category | retry | fix | song |
+| category | retriable? | fix | song |
 | ---- | ---- | --- | --- |
 | :unavailable | yes | make sure callee healthy | Out of Touch |
 | :interrupted | yes | stop interrupting | It Doesn't Matter Anymore |
+| :busy | yes | backoff and retry | Wait For Me |
 | :incorrect | no | fix caller bug | You'll Never Learn |
 | :forbidden | no | fix caller creds | I Can't Go For That |
 | :unsupported | no | fix caller verb | Your Imagination |
 | :not-found | no | fix caller noun | She's Gone |
 | :conflict | no | coordinate with callee | Give It Up |
 | :fault | no | fix callee bug | Falling |
-| :busy | yes | backoff and retry | Wait For Me |
 
 # Using cognitect.anomalies
 
