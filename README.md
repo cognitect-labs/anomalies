@@ -45,7 +45,7 @@ The "song" column contains a Hall and Oates song. The idea that Hall
 and Oates are software gurus is controversial in some circles, so you
 can treat this as flavortext.
 
-| category | retriable? | fix | song |
+| category | retryable? | fix | song |
 | ---- | ---- | --- | --- |
 | :unavailable | yes | make sure callee healthy | Out of Touch |
 | :interrupted | yes | stop interrupting | It Doesn't Matter Anymore |
