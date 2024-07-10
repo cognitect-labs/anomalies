@@ -48,14 +48,14 @@ can treat this as flavortext.
 | category | retryable? | fix | song |
 | ---- | ---- | --- | --- |
 | :unavailable | yes | make sure callee healthy | Out of Touch |
-| :interrupted | yes | stop interrupting | It Doesn't Matter Anymore |
+| :interrupted | maybe | stop interrupting | It Doesn't Matter Anymore |
 | :busy | yes | backoff and retry | Wait For Me |
 | :incorrect | no | fix caller bug | You'll Never Learn |
 | :forbidden | no | fix caller creds | I Can't Go For That |
 | :unsupported | no | fix caller verb | Your Imagination |
 | :not-found | no | fix caller noun | She's Gone |
 | :conflict | no | coordinate with callee | Give It Up |
-| :fault | no | fix callee bug | Falling |
+| :fault | maybe | fix callee bug | Falling |
 
 # Using cognitect.anomalies
 
